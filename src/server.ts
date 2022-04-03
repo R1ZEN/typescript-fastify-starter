@@ -1,13 +1,5 @@
-import Fastify from 'fastify';
+import { app } from './app';
 
-const fastify = Fastify({
-  logger: true,
-});
-
-fastify.get('/', (request, reply) => {
-  reply.send({ hello: 'world' });
-});
-
-fastify.listen({ port: 3000 }, (err, address) => {
+app.listen({ port: 3000 }, (err, address) => {
   if (err) throw err;
 });

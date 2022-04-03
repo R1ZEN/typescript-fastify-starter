@@ -1,5 +1,7 @@
 .git
 node_modules
+test
+*.config.ts
 npm-debug.log
 *.md
 *.yml
