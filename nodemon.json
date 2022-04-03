@@ -1,4 +1,7 @@
 {
-  "watch": ["src/**/*.ts"],
+  "watch": [
+    "src/**/*.ts"
+  ],
+  "ext": "*.ts",
   "exec": "npm run tsnode -- --inspect ./src/server.ts"
 }
