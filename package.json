@@ -1,0 +1,28 @@
+{
+  "name": "typescript-fastify-starter",
+  "version": "1.0.0",
+  "description": "A starting point for Node.js fastify apps with TypeScript",
+  "main": "src/server.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Microsoft/TypeScript-Node-Starter"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "scripts": {
+    "start": "npm run tsnode ./src/server.ts",
+    "dev": "nodemon --exec 'npm run tsnode -- --inspect ./src/server.ts'",
+    "tsnode": "node -r ts-node/register",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Pavel Bely",
+  "devDependencies": {
+    "nodemon": "2.0.15",
+    "prettier": "2.6.2"
+  },
+  "dependencies": {
+    "fastify": "3.27.4",
+    "ts-node": "10.7.0"
+  }
+}
