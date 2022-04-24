@@ -11,22 +11,22 @@
     "node": ">=14.0.0"
   },
   "scripts": {
-    "start": "npm run tsnode ./src/server.ts",
-    "dev": "nodemon",
-    "test": "jest",
-    "tsnode": "node -r ts-node/register"
+    "start": "pm2-runtime ecosystem.config.js",
+    "dev": "PM2_ENV=dev pm2-dev start ecosystem.config.js",
+    "build": "rm -rf dist && tsc --outDir dist",
+    "test": "jest"
   },
   "author": "Pavel Bely",
   "devDependencies": {
     "@types/jest": "27.4.1",
     "jest": "27.5.1",
-    "nodemon": "2.0.15",
     "prettier": "2.6.2",
     "ts-jest": "27.1.4"
   },
   "dependencies": {
     "dotenv": "16.0.0",
     "fastify": "3.27.4",
+    "pm2": "5.2.0",
     "ts-node": "10.7.0",
     "typescript": "4.6.3"
   }

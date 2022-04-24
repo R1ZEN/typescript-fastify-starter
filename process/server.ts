@@ -1,6 +1,6 @@
 import { join } from 'path';
 import { config } from 'dotenv';
-import { app } from './app';
+import { app } from '../src/app';
 
 void function main() {
   if (process.env.NODE_ENV !== 'production') {
